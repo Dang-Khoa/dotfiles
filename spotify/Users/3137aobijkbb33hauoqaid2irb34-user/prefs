@@ -1,0 +1,2 @@
+connect.dial_devices="[{\"address\":\"192.168.0.37\",\"app_state\":\"INSTALLED\",\"created_timestamp\":1706214537,\"device_id\":\"3a14f880-5a97-4084-9d93-63a2f0d77e4e\",\"dial_location_url\":\"http://192.168.0.37:1897/\",\"display_name\":\"[LG] webOS TV OLED65CX9LA\",\"last_seen\":1706214560,\"manufacturer\":\"LG\",\"model_name\":\"OLED65CX9LA\",\"public_ip\":\"2a02:810d:1500:a1c:0:0:0:4b09\",\"wol\":{\"all_interfaces\":false,\"delay_ms\":50,\"mac\":\"f8b95ac42e92\",\"port\":9,\"retries\":2400}}]"
+audio.play_bitrate_non_metered_migrated=true

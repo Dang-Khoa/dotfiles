@@ -1,0 +1,19 @@
+2024/02/16-11:35:04.046 4c0 Reusing MANIFEST /home/khoa/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2024/02/16-11:35:04.051 4c0 Recovering log #210
+2024/02/16-11:35:04.074 4c0 Level-0 table #213: started
+2024/02/16-11:35:04.088 4c0 Level-0 table #213: 729892 bytes OK
+2024/02/16-11:35:04.091 4c0 Delete type=0 #210
+2024/02/16-15:17:20.026 5c6 Level-0 table #216: started
+2024/02/16-15:17:20.048 5c6 Level-0 table #216: 731031 bytes OK
+2024/02/16-15:17:20.061 5c6 Delete type=0 #214
+2024/02/16-15:17:20.062 5c6 Compacting 4@0 + 2@1 files
+2024/02/16-15:17:20.080 5c6 Generated table #217@0: 13 keys, 2180405 bytes
+2024/02/16-15:17:20.108 5c6 Generated table #218@0: 87 keys, 2818701 bytes
+2024/02/16-15:17:20.108 5c6 Compacted 4@0 + 2@1 files => 4999106 bytes
+2024/02/16-15:17:20.110 5c6 compacted to: files[ 0 3 1 0 0 0 0 ]
+2024/02/16-15:17:20.110 5c6 Delete type=2 #213
+2024/02/16-15:17:20.110 5c6 Delete type=2 #204
+2024/02/16-15:17:20.110 5c6 Delete type=2 #211
+2024/02/16-15:17:20.110 5c6 Delete type=2 #216
+2024/02/16-15:17:20.110 5c6 Delete type=2 #209
+2024/02/16-15:17:20.110 5c6 Delete type=2 #205

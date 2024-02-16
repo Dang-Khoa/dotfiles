@@ -1,0 +1,75 @@
+.xfce4-panel button {
+	color: white;
+}
+
+.genmon_valuebutton, .genmon_value { 
+	color: #fff;
+	background-color: #414b5e;
+	border-radius: 10px;
+	padding: 5px 10px 5px 10px;
+	margin: 4px;
+}
+
+#pulseaudio-button {
+	color: #fff;
+	background-color: #414b5e;
+	border-radius: 10px;
+	padding: 0px 10px 0px 10px;
+	margin: 4px;
+}
+
+#docklike-plugin {
+	color: #fff;
+	background-color: #414b5e;
+	border-radius: 10px;
+	padding: 0px 10px 0px 10px;
+	margin: 4px;
+}
+
+#pager-13 .horizontal {
+	background-color: #414b5e;
+	border-radius: 10px;
+	padding: 3px 10px 3px 10px;
+	margin: 4px;
+}
+
+#pager-13 button {
+	background-color: #414b5e;
+}
+
+#pager-13 button label {
+	color: #fff;
+}
+
+
+#pager-13 button:checked, #pager-13 button:hover, #pager-13 button:active{
+	background-color: #4d576b;
+	border-radius: 10px;
+	padding: 7px; 
+}
+
+#pager-13 button:checked label {
+	color: #89C1D1;
+}
+
+#clock-button {
+	color: #fff;
+	background-color: #414b5e;
+	border-radius: 10px;
+	padding: 0px 10px 0px 10px;
+	margin: 4px;
+}
+
+#xfce4-notification-plugin {
+	color: #fff;
+	background-color: #414b5e;
+	border-radius: 10px;
+	margin: 4px;
+}
+
+#xfce4-clipman-plugin {
+	color: #fff;
+	background-color: #414b5e;
+	border-radius: 10px;
+	margin: 4px;
+}
