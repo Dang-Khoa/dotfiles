@@ -2,7 +2,7 @@ return {
   "akinsho/toggleterm.nvim",
   opts = {
     size = vim.o.lines *  0.2,
-    open_mapping = [[<leader>tt]],
+    open_mapping = [[<C-\>]],
     hide_numbers = true,
     shade_terminals = false,
     insert_mappings = true,

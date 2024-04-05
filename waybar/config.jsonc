@@ -1,0 +1,137 @@
+{
+  "position": "top",
+  "layer": "top",
+  "height": 18,
+  "margin-top": 0,
+  "margin-bottom": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+  "modules-left": ["custom/launcher", "hyprland/workspaces", "hyprland/window"],
+  "modules-center": ["mpris"],
+  "modules-right": ["tray", "group/pc-info", "group/system-info", "clock"],
+
+  "mpris": {
+      "format": "{player_icon}  {dynamic}",
+      "format-paused": "{status_icon}  {dynamic}",
+      "player-icons": { 
+          "default": "󰐌 ",
+          "mpv": "🎵"
+      },
+      "status-icons": {
+          "paused": "󰏥 "
+      },
+      "max-length": 40,
+      "interval": 0.5
+  },
+
+  // Modules configuration
+  "custom/launcher": {
+    "format": "",
+    "on-click": "rofi -show drun" 
+  },
+
+  "hyprland/workspaces": {
+    "active-only": false,
+    "disable-scroll": true,
+    "format": "{name}",
+    "on-click": "activate",
+  },
+
+  "hyprland/window": {
+      "format": "{class}: {title}",
+      "separate-outputs": true,
+      "rewrite": {
+          "kitty: (.*)": "   $1",
+          "org.kde.dolphin: dolphin (.*) — Dolphin": "󰉋   $1",
+          "firefox: (.*) — Mozilla Firefox": "󰈹   $1",
+          "Spotify: Spotify Premium": "󰓇  Spotify",
+          "discord: (.*) - Discord": "󰙯   $1",
+          "org.telegram.desktop: (.*)": "  $1",
+          "steam: (.*)Steam": "󰓓  Steam",
+      },
+      "max-length": 40
+  },
+  "tray": {
+    "icon-size": 16,
+    "spacing": 5
+  },
+
+  "group/system-info": {
+    "orientation":  "horizontal",
+    "modules":  [
+      "bluetooth",
+      "network",
+      "wireplumber",
+    ]
+  },
+
+  "bluetooth": {
+    "format": "",
+    "format-disabled": "󰂳",
+    "format-connected": "󰂱 {num_connections}",
+    "tooltip-format": " {device_alias}",
+    "tooltip-format-connected": "{device_enumerate}",
+    "tooltip-format-enumerate-connected": " {device_alias} 󰂄{device_battery_percentage}%",
+    "tooltip": true,
+    "on-click": "blueman-manager",
+  },
+
+  "network": {
+    "format-wifi": "󰤨",
+    "tooltip-format": "{essid}",
+    "on-click-right": "nm-connection-editor"
+  },
+
+  "wireplumber": {
+    "format": "{icon} {volume}",
+    "format-muted": " Mute",
+    "on-click": "pavucontrol -t 3",
+    "tooltip-format": "{icon} {desc} // {volume}%",
+    "scroll-step": 5,
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "default": ["", "", "󰕾", ""], 
+    }
+  },
+
+  "group/pc-info": {
+    "orientation":  "horizontal",
+    "modules":  [
+      "memory",
+      "cpu",
+      "temperature",
+    ]
+  },
+
+  "memory": {
+    "format": "󰍛 {}%",
+    "format-alt": "󰍛 {used}/{total} GiB",
+    "interval": 5
+  },
+
+  "cpu": {
+    "format": "󰻠 {usage}%",
+    "format-alt": "󰻠 {avg_frequency} GHz",
+    "interval": 5
+  },
+
+  "temperature": {
+    "interval": 10,
+    "tooltip": true,
+    "hwmon-path": ["/sys/class/hwmon/hwmon1/temp1_input", "/sys/class/thermal/thermal_zone0/temp"],
+    "critical-threshold": 82,
+    "format": "󰈸 {temperatureC}°C",
+    "format-critical": "󰈸 {temperatureC}°C",
+    "on-click-right": "kitty --title nvtop sh -c 'nvtop'"
+  },
+
+
+  "clock": {
+    "format": " {:%H:%M}",
+    "tooltip": "true",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": " {:%d/%m}"
+  },
+}
