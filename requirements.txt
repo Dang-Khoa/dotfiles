@@ -1,7 +1,0 @@
-neovim
-ripgrep
-
-hyprland
-rofi
-sddm
-waybar
